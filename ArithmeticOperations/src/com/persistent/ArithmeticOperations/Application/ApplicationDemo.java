@@ -17,8 +17,6 @@ public class ApplicationDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) throws MyException{
-	
-
 		 BufferedReader in1 = new BufferedReader(new InputStreamReader(System.in));
          ArithmeticOperationsImpl arithmeticOperations = new  ArithmeticOperationsImpl();
 		 int n=0,n1=0;
@@ -26,15 +24,16 @@ public class ApplicationDemo {
 		 int choice=0;
 		 do{
 			 // Is this really required? -----//
-		 System.out.println("Please Select Choice from below\n");
-		 System.out.println("1. Revese and check for palindrom number, armstrong");
-		 System.out.println("2. Find Factorial of a number");
-		 System.out.println("3. Find LCM of two numbers");
-		 System.out.println("4. Perform some random operations on two numbers");
-		 System.out.println("5. Prime number (input from file)");
-		 System.out.println("6. Some more random operations on two numbers");
-		 System.out.println("7.  fibonacci series");
-		 System.out.println("8. Exit\n");
+			 //No!! 
+			 System.out.println("Please Select Choice from below\n");
+			 System.out.println("1. Revese and check for palindrom number, armstrong");
+			 System.out.println("2. Find Factorial of a number");
+			 System.out.println("3. Find LCM of two numbers");
+			 System.out.println("4. Perform some random operations on two numbers");
+			 System.out.println("5. Prime number (input from file)");
+			 System.out.println("6. Some more random operations on two numbers");
+			 System.out.println("7.  fibonacci series");
+			 System.out.println("8. Exit\n");
 							
 		 try {
 			 inputData=in1.readLine();
@@ -155,12 +154,6 @@ public class ApplicationDemo {
 						 if(n1==0)
 							 throw new MyException("Divide by zero.");
 						 System.out.println("Division : " + n + "/" + n1 + " = " + arithmeticOperations.divide(n,n1));
-					 
-						  
-						 
-						
-					        
-					 
 					 }
 					 catch(Exception  ex){
 						 System.out.println(ex);
