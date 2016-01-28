@@ -32,8 +32,9 @@ public class ApplicationDemo {
 		 System.out.println("3. Find LCM of two numbers");
 		 System.out.println("4. Perform some random operations on two numbers");
 		 System.out.println("5. Prime number (input from file)");
-		 System.out.println("6. Some more random operations on two numbers, fibonacci series");
-		 System.out.println("7. Exit\n");
+		 System.out.println("6. Some more random operations on two numbers");
+		 System.out.println("7.  fibonacci series");
+		 System.out.println("8. Exit\n");
 							
 		 try {
 			 inputData=in1.readLine();
@@ -157,17 +158,7 @@ public class ApplicationDemo {
 					 
 						  
 						 
-						 //------------fibonacci--------------------//
-						 System.out.print("Enter number upto which Fibonacci series to print: ");
-					        int number = new Scanner(System.in).nextInt();
-					        System.out.println("\n\nFibonacci series upto " + number +" numbers : ");
-					     //printing Fibonacci series upto number
-					     for(int i=1; i<=number; i++){
-					        System.out.print(arithmeticOperations.fibonacciRecusion(i) +" ");
-					      }
-					        //-------------end fibonacci------------//
-					        
-					        
+						
 					        
 					 
 					 }
@@ -180,6 +171,20 @@ public class ApplicationDemo {
 					 System.out.println(e);
 				 }
 				 
+				 break;
+			
+			 case 7:
+				 //------------fibonacci--------------------//
+				 System.out.print("Enter number upto which Fibonacci series to print: ");
+			        int number = new Scanner(System.in).nextInt();
+			        System.out.println("\n\nFibonacci series upto " + number +" numbers : ");
+			     //printing Fibonacci series upto number
+			     for(int i=1; i<=number; i++){
+			        System.out.print(arithmeticOperations.fibonacciRecusion(i) +" ");
+			      }
+			        //-------------end fibonacci------------//
+			        
+			        
 				 break;
 			default : System.out.println("Invalid choice.");
 				 
